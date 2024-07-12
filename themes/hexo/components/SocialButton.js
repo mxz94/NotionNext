@@ -23,7 +23,7 @@ const SocialButton = () => {
   const CONTACT_XIAOHONGSHU = siteConfig('CONTACT_XIAOHONGSHU')
   const CONTACT_ZHISHIXINGQIU = siteConfig('CONTACT_ZHISHIXINGQIU')
   const CONTACT_WEHCHAT_PUBLIC = siteConfig('CONTACT_WEHCHAT_PUBLIC')
-  const CONTACT_RUN = siteConfig('CONTACT_RUN')
+ 
 
   const [qrCodeShow, setQrCodeShow] = useState(false)
 
@@ -45,15 +45,7 @@ const SocialButton = () => {
             <i className='transform hover:scale-125 duration-150 fab fa-github dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
-     {CONTACT_RUN && (
-          <a
-            target='_blank'
-            rel='noreferrer'
-            title={'run'}
-            href={CONTACT_RUN}>
-            <i className='transform hover:scale-125 duration-150 fa-solid fa-person-running dark:hover:text-indigo-400 hover:text-indigo-600' />
-          </a>
-        )}
+     
         {CONTACT_TWITTER && (
           <a
             target='_blank'
