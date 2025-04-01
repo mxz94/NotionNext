@@ -65,7 +65,32 @@ const BLOG = {
     'Hi，我是一个程序员, Hi，我是一个打工人,Hi，我是一个干饭人,欢迎来到我的博客🎉',
 
   // uuid重定向至 slug
-  UUID_REDIRECT: process.env.UUID_REDIRECT || false
+  UUID_REDIRECT: process.env.UUID_REDIRECT || false,
+    // 鼠标点击烟花特效
+    FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || false, // 开关
+// 烟花色彩，感谢 https://github.com/Vixcity 提交的色彩
+    FIREWORKS_COLOR: ['255, 20, 97', '24, 255, 146', '90, 135, 255', '251, 243, 140'],
+
+    GITBOOK_INDEX_PAGE: 'about', // 文档首页显示的文章，请确此路径包含在您的notion数据库中
+
+    GITBOOK_AUTO_SORT: process.env.NEXT_PUBLIC_GITBOOK_AUTO_SORT || true, // 是否自动按分类名 归组排序文章；自动归组可能会打乱您Notion中的文章顺序
+
+    GITBOOK_LATEST_POST_RED_BADGE:
+        process.env.NEXT_PUBLIC_GITBOOK_LATEST_POST_RED_BADGE || true, // 是否给最新文章显示红点
+
+    // 菜单
+    GITBOOK_MENU_CATEGORY: true, // 显示分类
+    GITBOOK_BOOK_MENU_TAG: true, // 显示标签
+    GITBOOK_MENU_ARCHIVE: true, // 显示归档
+    GITBOOK_MENU_SEARCH: true, // 显示搜索
+
+    // 导航文章自动排他折叠
+    GITBOOK_EXCLUSIVE_COLLAPSE: true, // 一次只展开一个分类，其它文件夹自动关闭。
+
+    // Widget
+    GITBOOK_WIDGET_REVOLVER_MAPS:
+        process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'false', // 地图插件
+    GITBOOK_WIDGET_TO_TOP: true // 跳回顶部
 }
 
 module.exports = BLOG
