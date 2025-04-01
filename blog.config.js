@@ -14,10 +14,10 @@ const BLOG = {
   APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext', // 您的昵称 例如 tangly1024
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'mlx', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的干饭人🍚', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
-  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
+  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'mlx, 博客', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX
   BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://beian.miit.gov.cn/', // 备案查询链接，如果用了萌备等备案请在这里填写
@@ -90,7 +90,56 @@ const BLOG = {
     // Widget
     GITBOOK_WIDGET_REVOLVER_MAPS:
         process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'false', // 地图插件
-    GITBOOK_WIDGET_TO_TOP: true // 跳回顶部
+    GITBOOK_WIDGET_TO_TOP: true, // 跳回顶部
+    FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || 'font-sans',
+    // 字体CSS 例如 https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css
+    FONT_URL: [
+        'https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css',
+        'https://fonts.googleapis.com/css?family=Bitter&display=swap',
+        'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap',
+        'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap'
+    ],
+    // 无衬线字体 例如'"LXGW WenKai"'
+    FONT_SANS: [
+        '"LXGW WenKai"',
+        '"PingFang SC"',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Hiragino Sans GB"',
+        '"Microsoft YaHei"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Segoe UI"',
+        '"Noto Sans SC"',
+        'HarmonyOS_Regular',
+        '"Helvetica Neue"',
+        'Helvetica',
+        '"Source Han Sans SC"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"'
+    ],
+    // 衬线字体 例如'"LXGW WenKai"'
+    FONT_SERIF: [
+        '"LXGW WenKai"',
+        'Bitter',
+        '"Noto Serif SC"',
+        'SimSun',
+        '"Times New Roman"',
+        'Times',
+        'serif',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Apple Color Emoji"'
+    ],
+    FONT_AWESOME:
+        process.env.NEXT_PUBLIC_FONT_AWESOME_PATH ||
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', // font-awesome 字体图标地址; 可选 /css/all.min.css ， https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
+    CUSTOM_RIGHT_CLICK_CONTEXT_MENU_DARK_MODE:
+        process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU_DARK_MODE || false, // 是否显示深色模式
+
+    MOUSE_FOLLOW: process.env.NEXT_PUBLIC_MOUSE_FOLLOW || false, // 开关
+    WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || false, // 是否显示宠物挂件
 }
 
 module.exports = BLOG
