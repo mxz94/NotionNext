@@ -10,6 +10,6 @@
   
   <!-- 白色文字 -->
   <text x="100" y="190" font-size="12" text-anchor="middle" fill="white">
-    Simple SVG Example
+    mxz
   </text>
 </svg>
