@@ -71,26 +71,7 @@ const BLOG = {
 // 烟花色彩，感谢 https://github.com/Vixcity 提交的色彩
     FIREWORKS_COLOR: ['255, 20, 97', '24, 255, 146', '90, 135, 255', '251, 243, 140'],
 
-    GITBOOK_INDEX_PAGE: 'about', // 文档首页显示的文章，请确此路径包含在您的notion数据库中
 
-    GITBOOK_AUTO_SORT: process.env.NEXT_PUBLIC_GITBOOK_AUTO_SORT || true, // 是否自动按分类名 归组排序文章；自动归组可能会打乱您Notion中的文章顺序
-
-    GITBOOK_LATEST_POST_RED_BADGE:
-        process.env.NEXT_PUBLIC_GITBOOK_LATEST_POST_RED_BADGE || false, // 是否给最新文章显示红点
-
-    // 菜单
-    GITBOOK_MENU_CATEGORY: true, // 显示分类
-    GITBOOK_BOOK_MENU_TAG: false, // 显示标签
-    GITBOOK_MENU_ARCHIVE: false, // 显示归档
-    GITBOOK_MENU_SEARCH: true, // 显示搜索
-
-    // 导航文章自动排他折叠
-    GITBOOK_EXCLUSIVE_COLLAPSE: false, // 一次只展开一个分类，其它文件夹自动关闭。
-
-    // Widget
-    GITBOOK_WIDGET_REVOLVER_MAPS:
-        process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'false', // 地图插件
-    GITBOOK_WIDGET_TO_TOP: true, // 跳回顶部
     FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || 'font-sans',
     // 字体CSS 例如 https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css
     FONT_URL: [
