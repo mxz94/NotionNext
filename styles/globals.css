@@ -94,6 +94,9 @@ nav {
 .gt-meta {
   @apply dark:text-gray-300;
 }
+footer {
+  display: none; /* 正确拼写是 none（不是 nono） */
+}
 
 #waifu {
   @apply right-auto left-0 hidden lg:block z-10 !important;
